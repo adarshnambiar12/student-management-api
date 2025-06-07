@@ -1,0 +1,35 @@
+{
+  "name": "student-management-api",
+  "version": "1.0.0",
+  "description": "Student Management REST API using Node.js, Express, and MongoDB",
+  "keywords": [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Backend",
+    "Student",
+    "Management"
+  ],
+  "license": "ISC",
+  "author": "Adarsh Nambiar",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
