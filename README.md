@@ -2,6 +2,8 @@
 
 A REST API for managing students and courses, built with Node.js, Express, MongoDB, and JWT authentication.
 
+[Demo Frontend Video](https://drive.google.com/file/d/1Jk5dEYrROfXH46Zwa378ukfn5omVtsOx/view?usp=sharing)
+
 ## Features
 
 - **Authentication & Security**: Secure JWT authentication system with admin login and rate limiting
