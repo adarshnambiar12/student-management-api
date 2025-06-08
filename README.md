@@ -3,6 +3,8 @@
 A REST API for managing students and courses, built with Node.js, Express, MongoDB, and JWT authentication.
 
 [Demo Frontend Video](https://drive.google.com/file/d/1Jk5dEYrROfXH46Zwa378ukfn5omVtsOx/view?usp=sharing)
+[Backend Hosted URL](https://student-management-api-bd9u.onrender.com)
+[Frontend Hoster URL](https://student-management-frontend-opvk.onrender.com)
 
 ## Features
 
