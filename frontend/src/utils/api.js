@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://student-management-api-bd9u.onrender.com';
 
 // Configure axios
 axios.interceptors.request.use(
