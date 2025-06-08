@@ -2,6 +2,7 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 
 const AuthContext = createContext();
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export function useAuth() {
   return useContext(AuthContext);
@@ -23,10 +24,7 @@ export function AuthProvider({ children }) {
 
   const checkAuthStatus = async () => {
     try {
-      // You might need to implement an endpoint that returns the current user
-      // const response = await axios.get('http://localhost:5000/auth/me');
-      // setCurrentUser(response.data);
-      setCurrentUser({ username: localStorage.getItem('username') }); // Simplified for now
+      setCurrentUser({ username: localStorage.getItem('username') });
       setLoading(false);
     } catch (error) {
       console.error('Auth check failed:', error);
@@ -37,7 +35,7 @@ export function AuthProvider({ children }) {
 
   const login = async (username, password) => {
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', {
+      const response = await axios.post(`${API_URL}/auth/login`, {
         username,
         password
       });
@@ -59,7 +57,7 @@ export function AuthProvider({ children }) {
 
   const register = async (username, password) => {
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', {
+      const response = await axios.post(`${API_URL}/auth/register`, {
         username,
         password
       });
